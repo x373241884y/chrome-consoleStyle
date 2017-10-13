@@ -1,2 +1,3 @@
 # chrome-consoleStyle
-define console style
+
+a simple chrome define console style extension based on angularjs
