@@ -5,17 +5,5 @@
     "version": "0.1",
     "homepage_url": "https://github.com/x373241884y/chrome-consoleStyle",
     "options_page":"options.html",
-    "devtools_page": "devtools.html",
-    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC4r/pUHVPYQTn7vu3YHT52I0SKM15OBOTi0Jii4q5Koxd3Gdc/WXdqC2YgMA25J5PRiSubu/nHFf12Ubp3OZyNqB3j45ZscQ+tH1bwcV+cqdvv/Ik6VQaS6/qLmenLdFPKOCg/g1L1iKZu6Jjny6GlovpBj+7gjWQZBIoGBd70HQIDAQAB",
-    "content_scripts": [{
-        "js": [ "js/console.js" ],
-        "matches": [ "<all_urls>" ]
-    }],
-    "background":{
-        "scripts":[
-            "js/background.js"
-        ]
-    },
-    "permissions": ["tabs"],
-    "web_accessible_resources": [ "css/default.css" ]
+    "devtools_page": "devtools.html"
 }
