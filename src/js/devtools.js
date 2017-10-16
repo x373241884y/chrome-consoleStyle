@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var userStyle = localStorage.userStyle,styleText;
+var userStyle = localStorage.getItem('userStyle'),styleText;
 if(userStyle){
 	styleText = userStyle;
 }else{
@@ -12,5 +12,5 @@ if(userStyle){
 	xhr.open("GET", "/" + stylesheet, false);
 	xhr.send();
 	styleText = xhr.responseText;
-	chrome.devtools.panels.applyStyleSheet(styleText);
 }
+chrome.devtools.panels.applyStyleSheet(styleText);
